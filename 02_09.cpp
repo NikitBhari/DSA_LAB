@@ -1,69 +1,80 @@
 //
 // Created by bhari on 02-09-2024.
 //
-#include<iostream>
-using namespace  std;
 
-void Delete1(int &n,int (&arr)[],int index){
-    for(int i=index;i<n-1;++i){
-        arr[i]=arr[i+1];
+#include <iostream>
+using namespace std;
+
+void Delete1(int &n, int arr[], int index) {
+    for (int i = index; i < n - 1; ++i) {
+        arr[i] = arr[i + 1];
     }
     n--;
 }
 
-void Insert1(int &n,int arr[],int index,int target){
-    for (int i = n; i > index; --i) {
-        arr[i] = arr[i - 1];
+void Insert1(int &n, int arr[], int index, int target) {
+
+    int* arr1 = new int[n + 1];
+
+    for (int i = 0; i < index; ++i) {
+        arr1[i] = arr[i];
     }
-    arr[index] = target;
+    arr1[index] = target;
+
+
+    for (int i = index + 1; i < n + 1; ++i) {
+        arr1[i] = arr[i - 1];
+    }
+
     n++;
+    for (int i = 0; i < n; ++i) {
+        arr[i] = arr1[i];
+    }
+    delete[] arr1;
 }
 
-int main(){
+int main() {
     int n;
-    cout<<"Enter the size of the array :";
-    cin>>n;
-    int arr[n];
-    cout<<"Enter the elements in sorted order:";
-    for(int i=0;i<n;++i){
-        int p;
-        cin>>p;
-        arr[i]=p;
+    cout << "Enter the size of the array: ";
+    cin >> n;
+
+    int* arr = new int[n];
+
+    cout << "Enter the elements in sorted order: ";
+    for (int i = 0; i < n; ++i) {
+        cin >> arr[i];
     }
-    cout<<"Enter Target element:";
+
+    cout << "Enter target element: ";
     int target;
-    cin>>target;
-    int left=0;
-    int right =n-1;
-    while(left<=right){
-        int mid=left+(right-left)/2;
-        if(arr[mid]==target) {
-            left=mid;
-            break;}
-        else if(arr[mid]>target){
-            right=mid-1;
-        }
-        else {
+    cin >> target;
+
+    int left = 0;
+    int right = n - 1;
+    while (left <= right) {
+        int mid = left + (right - left) / 2;
+        if (arr[mid] == target) {
+            left = mid;
+            break;
+        } else if (arr[mid] > target) {
+            right = mid - 1;
+        } else {
             left = mid + 1;
         }
     }
 
-    cout<<"array after:";
-
-    if (arr[left] == target){
+    if (arr[left] == target) {
         Delete1(n, arr, left);
-
-    }
-    else{
-       Insert1(n,arr,left,target);
-
-    }
-    cout<<"array after:";
-    for(int i=0;i<n;++i){
-        cout<<arr[i] << " ";
+    } else {
+        Insert1(n, arr, left, target);
     }
 
+    cout << "Array after: ";
+    for (int i = 0; i < n; ++i) {
+        cout << arr[i] << " ";
+    }
 
-   return 0;
+    delete[] arr;
 
+    return 0;
 }
