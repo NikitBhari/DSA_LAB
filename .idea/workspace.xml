@@ -68,7 +68,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="C/C++ File.selectionsort.cpp (1)">
+  <component name="RunManager" selected="C/C++ File.q.cpp">
     <configuration name="14_10.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DSA_LAB" TARGET_NAME="14_10.cpp" CONFIG_NAME="14_10.cpp">
       <option name="sourceFile" value="14_10.cpp" />
       <method v="2">
@@ -87,8 +87,8 @@
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="quicksort.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DSA_LAB" TARGET_NAME="quicksort.cpp" CONFIG_NAME="quicksort.cpp">
-      <option name="sourceFile" value="quicksort.cpp" />
+    <configuration name="q.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DSA_LAB" TARGET_NAME="q.cpp" CONFIG_NAME="q.cpp">
+      <option name="sourceFile" value="q.cpp" />
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
@@ -101,11 +101,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="C/C++ File.q.cpp" />
         <item itemvalue="C/C++ File.selectionsort.cpp (1)" />
         <item itemvalue="C/C++ File.21_10.cpp" />
         <item itemvalue="C/C++ File.23_09.cpp" />
         <item itemvalue="C/C++ File.14_10.cpp" />
-        <item itemvalue="C/C++ File.quicksort.cpp" />
       </list>
     </recent_temporary>
   </component>
