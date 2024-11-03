@@ -1,4 +1,3 @@
-
 // Created by bhari on 12-08-2024.
 
 #include<iostream>
@@ -22,7 +21,6 @@ void BubbleSort(int *arr,int n,bool flag){
         }
 
     }
-
 
 }
 int main(){
